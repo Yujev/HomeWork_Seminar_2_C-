@@ -54,3 +54,21 @@ if (chosenNumber == 1)
     }
     Console.WriteLine($"Третья цифра числа {num} -> {thirdNumber}");
 }
+
+if (chosenNumber == 2)
+{
+    Console.Write("Введите число: ");
+    string number = Console.ReadLine()!;
+    if (number.Length < 3)
+    {
+        Console.WriteLine($"Третьей цифры нет!");
+    }
+    else
+    {
+        Console.WriteLine($"Третья цифра числа {number} == {number[2]}");
+    }
+}
+else if (chosenNumber < 1 || chosenNumber > 2)
+{
+    Console.Write("Такого варианта нет!");
+}
